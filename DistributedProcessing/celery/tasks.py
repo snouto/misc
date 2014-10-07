@@ -1,5 +1,31 @@
 __author__ = 'root'
 
+
+"""
+
+To run this file
+================
+Place it in a directory on your machine , open linux shell on that directory (Assuming that you have already installed Celery
+
+to install Celery
+=================
+pip install celery
+
+to install Redis (As our broker to distribute tasks among workers)
+==================================================================
+
+pip install celery[redis]
+
+then on command prompt on the directory that contains this file  , write the following
+
+
+$ celery -A tasks worker --loglevel=info
+
+
+
+
+"""
+
 from math import sqrt
 from celery import Celery
 
