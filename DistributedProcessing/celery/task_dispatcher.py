@@ -15,6 +15,7 @@ def call_fib(value_list):
     results = {x:app.send_task('tasks.calc_fib',args=(x,)) for x in value_list}
 
     for key , value in results.items():
+
         print("key : %d , value : %s" %(key,value.get()))
 
 
